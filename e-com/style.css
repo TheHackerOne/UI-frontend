@@ -1,0 +1,320 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 120vh;
+	width: 100vw;
+	background-color: #FCD661;
+	overflow-x: hidden;
+}
+
+.container-fluid{
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center-div{
+	height: 700px;
+	width: 1300px;
+	border-radius: 20px;
+}
+
+.left-ui{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+/* Navbar/Searchbar */
+
+.search-bar{
+	position: relative;
+	z-index:9;
+	display: block;
+}
+
+.navbar{
+	border-radius: 20px;
+}
+
+.arrow1{
+	font-size: 30px;
+	color: black;
+	padding: 7px;
+	position: absolute;
+	left: 30px;
+}
+
+.navbar-brand{
+	font-weight: 600;
+	position: absolute;
+	left: 60px;
+}
+
+.bar input{
+	position: absolute;
+	right: 100px;
+	width: 500px!important;
+	border-radius: 20px;
+}
+
+.search-icon{
+	font-size: 20px;
+	position: absolute;
+	right: 575px;
+	z-index: 10;
+	color: grey;
+}
+
+/* poster */
+
+.poster{
+	position: absolute;
+	top: 100px;
+}
+
+.right-ui{
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+/* heading */
+
+.heading{
+	position: absolute;
+	top: 310px;
+	display: block;
+}
+
+.heading h2{
+	display: inline-block;
+}
+
+.delivery{
+	background-color: #FB6D3B;
+	border-radius: 20px;
+	font-size: 12px;
+	color: white;
+	margin-left: 410px;
+}
+
+/* category */
+
+.category{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 600px;
+}
+
+.outer-cat{
+	height: 85px;
+	width: 55px;
+	background-color: white;
+	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+	position: relative;
+	top: 300px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	border-radius: 50px;
+	transition: background-color 500ms ease-out;
+}
+
+.outer-cat.selected{
+	background-color: #FBD35F;
+}
+
+.outer-cat:hover{
+	background-color: #FBD35F;
+}
+
+.inner-cat{
+	position: relative;
+	margin-top: 5px;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner-cat .cat-icon{
+	position: absolute;
+	font-size: 20px;
+	color: grey;
+}
+
+.inner-cat0::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'All';
+}
+.inner-cat1::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'Pizza';
+}
+.inner-cat2::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'Asian';
+}
+.inner-cat3::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'Burger';
+}
+.inner-cat4::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'Barbeq';
+}
+.inner-cat5::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'Thai';
+}
+.inner-cat6::before{
+	display: block;
+	position: absolute;
+	top: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	content: 'Sushi';
+}
+
+/* Cards */
+
+.cards{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	top: 320px;
+}
+
+.card img{
+	height: 100px;
+	width: 200px;
+}
+
+.card{
+	width: 200px;
+	height: 200px;
+}
+
+.card p{
+	text-align: center;
+	font-weight: 500;
+}
+
+.card-info{
+	display: flex;
+	justify-content: space-around;
+}
+
+.rating{
+	position: relative;
+	left: -12px;
+	top: -3px;
+}
+
+.card-info span{
+	color: grey;
+}
+
+
+/* left-ui */
+
+.cook-time{
+	height: 100px;
+	width: 250px;
+	background-color: #503E9D;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+.cook-time pre{
+	color: white;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.cook-time a{
+	text-decoration: none;
+	color: #FBD35F;
+}
+
+.alarm{
+	font-size: 20px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+/* Orders */
+
+.order{
+	display: flex;
+	flex-direction: row;
+	margin: 25px 0;
+	font-size: 14px;
+	font-weight: 500;
+	align-items: center;
+}
+
+.order img{
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.order-price{
+	color: grey;
+	margin-left: 35px;
+}
+
+/* Checkout */
+
+.outer-curve{
+	display: flex;
+	background-color: #FCD661;
+	margin-top: 20px;
+	margin-left: 100px;
+	padding: 20px;
+	margin-right: -20px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	font-weight: 500;
+}
+
+.outer-curve i{
+	position: relative;
+	left: 10px;
+	top: -10px;
+}
