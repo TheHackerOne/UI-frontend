@@ -3,5 +3,4 @@ This repository consists of some of my front-end projects.
 
 1) Food Mealer
 
-![GitHub Logo](/ecom.jpg)
-Format: ![project screenshot](url)
+![SS of my first project](https://github.com/TheHackerOne/UI-frontend/blob/master/e-com/ecom.JPG)
